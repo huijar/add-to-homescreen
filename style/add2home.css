@@ -80,6 +80,16 @@
 	border-color:#ccc !important;
 }
 
+#addToHomeScreen.addToHomeChrome31 .addToHomeArrow {
+    -webkit-transform:rotateZ(-135deg);
+    background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(238,238,238,0)),color-stop(0.4,rgba(238,238,238,0)),color-stop(0.4,#eee));
+    -webkit-box-shadow:inset -1px -1px 0 #fff !important;
+    border-color:#ccc !important;
+    -webkit-box-shadow:inset -1px -1px 0 #fff;
+    top:-9px; bottom:auto; left:93%;
+    border-color:#505050 !important;
+}
+
 /**
  *
  * The balloon arrow for iPad
@@ -130,6 +140,23 @@
 #addToHomeScreen .addToHomePlus {
 	font-weight:bold;
 	font-size:1.3em;
+}
+
+/**
+ *
+ * The ':' icon, displayed only on Chrome +31
+ *
+ */
+#addToHomeScreen.addToHomeChrome31 .addToHomePlus {
+    display:inline-block;
+    width:5px;
+    height:15px;
+    background-repeat:no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAeCAYAAAD6t+QOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAMVJREFUOE+tU9EOgyAM9C/2AqIYHgR5kA/AGPj/X+rWJmMat1GymTSm6Xm569mua31yzvCtxnGEwlkDa6354L7v+WApJR/cpPktc0rpspUYI8zz/JKBX2IJIeiN7o0xEEKg/mSwNRc+/m+h7PtOHthxs0NpZrbW8mWwNW/bRsEUg8/U1nUF5xwNsbz3gD/RCXxM5DG88ROqIWsJsveMROxtILiJ+fez+mS0SQaeW9koNqhLKQXDMMA0TWQK+2VZ6DZr67/M755Fb+b/KY1oAAAAAElFTkSuQmCC');
+    background-size:5px 15px;
+    text-indent:-9999em;
+    overflow:hidden;
+
 }
 
 
