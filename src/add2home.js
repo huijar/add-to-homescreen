@@ -150,7 +150,7 @@ var addToHome = (function (w) {
         isIPad = (/ipad/gi).test(nav.platform);
         isRetina = w.devicePixelRatio && w.devicePixelRatio > 1;
         isSafari = (/Safari/i).test(nav.appVersion) && !(/CriOS/i).test(nav.appVersion);
-        isStandalone = nav.standalone;
+        isStandalone = nav.standalone || (screen.height-document.documentElement.clientHeight<40);
         OSVersion = nav.appVersion.match(/OS (\d+_\d+)/i);
         OSVersion = OSVersion && OSVersion[1] ? +OSVersion[1].replace('_', '.') : 0;
 
