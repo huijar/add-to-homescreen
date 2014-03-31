@@ -317,7 +317,7 @@ var addToHome = (function (w) {
     }
 
     function manualShow (override) {
-        if ( !isIDevice || balloon ) return;
+        if ( (!isIDevice && !isChrome31) || balloon ) return;
 
         overrideChecks = override;
         loaded();
